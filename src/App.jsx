@@ -1,45 +1,47 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import { useState, useEffect } from "react";
+import { Outlet } from "react-router-dom";
+import SiteNav from "./components/SiteNav";
+import SiteFooter from "./components/SiteFooter";
+import { fetchApi } from "../lib/api";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+
+  const [data, setData] = useState(null);
+  const [loaded, setLoaded] =useState(false);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const res = await fetchApi();
+      setData(res);
+      setLoaded(true);
+    };
+
+    if (!data) {
+      fetchData().catch((error) => {
+        console.log(error);
+      });
+    }
+  }, []);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
-    </div>
-  )
+    <>
+      <div className="App overflow-hidden">
+        <SiteNav />
+
+        <main>
+          <Outlet
+            context={{
+              data,
+              loaded,
+            }}
+          />
+        </main>
+
+        <SiteFooter />
+      </div>
+    </>
+  );
 }
 
-export default App
+export default App;
