@@ -1,0 +1,23 @@
+import React from "react";
+
+const ArrowUp = () => {
+  return (
+    <svg
+      width="42"
+      height="23"
+      viewBox="0 0 42 23"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M38 19L21.8947 4L4 19"
+        stroke="white"
+        stroke-width="8"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export default ArrowUp;

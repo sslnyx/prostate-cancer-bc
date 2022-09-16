@@ -47,9 +47,42 @@
   font-display: swap;
 }
 
-/* :root {
-  --fs-xl: 12rem;
-} */
+@font-face {
+  font-family: "Roboto";
+  src: url("/assets/fonts/Roboto-Thin.eot");
+  src: url("/assets/fonts/Roboto-Thin.eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/Roboto-Thin.woff2") format("woff2"),
+    url("/assets/fonts/Roboto-Thin.woff") format("woff"),
+    url("/assets/fonts/Roboto-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/assets/fonts/Roboto-Light.eot");
+  src: url("/assets/fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/Roboto-Light.woff2") format("woff2"),
+    url("/assets/fonts/Roboto-Light.woff") format("woff"),
+    url("/assets/fonts/Roboto-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/assets/fonts/Roboto-BoldItalic.eot');
+  src: url('/assets/fonts/Roboto-BoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('/assets/fonts/Roboto-BoldItalic.woff2') format('woff2'),
+      url('/assets/fonts/Roboto-BoldItalic.woff') format('woff'),
+      url('/assets/fonts/Roboto-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
 
 @tailwind base;
 @tailwind components;
@@ -58,18 +91,299 @@
 @layer base {
   body {
     /* @apply font-["Roboto"]; */
+    @apply text-sm md:text-base font-[300] text-black;
+  }
+
+  p {
+    @apply mb-5 last:mb-0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-["anton"] uppercase text-darkBlue;
   }
 
   h1 {
-    font-family: "Anton";
     @apply text-5xl;
   }
 
+  h2 {
+    @apply text-4xl leading-[3rem];
+  }
+
+  h3 {
+    @apply text-3xl;
+  }
+
+  .pc-gradient {
+    background: rgb(16,75,111);
+    background: linear-gradient(0deg, rgba(16,75,111,1) 0%, rgba(16,75,111,1) 75%, rgba(255,255,255,0) 100%);
+  }
+
+  @media (min-width: 768px) {
+    .pc-gradient {
+      background: rgb(16,75,111);
+      background: linear-gradient(90deg, rgba(16,75,111,1) 0%, rgba(16,75,111,1) 75%, rgba(255,255,255,0) 100%);
+    }
+  
+  }
+
+  section {
+    @apply py-[25px] md:py-[50px] first:pt-[50px];
+  }
+
   .btn-main {
-    @apply bg-blue border-blue hover:text-blue
+    @apply bg-blue border-blue hover:text-blue;
   }
 
   .btn-orange {
-    @apply bg-orange border-orange hover:text-orange
+    @apply bg-orange border-orange hover:text-orange;
   }
+
+  .dots {
+    display: flex;
+    padding: 30px 0;
+    justify-content: center;
+  }
+
+  .dot {
+    border: none;
+    width: 10px;
+    height: 10px;
+    background: #c5c5c5;
+    border-radius: 50%;
+    margin: 0 5px;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  .dot:focus {
+    outline: none;
+  }
+
+  .dot.active {
+    background: #000;
+  }
+
+  footer form input {
+    @apply bg-transparent border-2 px-3 py-3;
+  }
+
+  .title-dark .p1 {
+    @apply text-white;
+  }
+
+  .title-dark .p2,
+  .title-light .p2 {
+    @apply text-blue;
+  }
+
+  .title-light .p1 {
+    @apply text-darkBlue;
+  }
+
+  .initiative-section .text-block {
+    @apply order-2;
+  }
+
+  .initiative-section:nth-child(2n) .text-block {
+    @apply md:order-1;
+  }
+
+  .initiative-section:nth-child(2n) .img-block {
+    @apply md:order-2;
+  }
+
+  .outer-square,
+  .outer-9_16,
+  .outer-2_3  {
+    position: relative;
+  }
+
+  .outer-square:before,
+  .outer-9_16:before,
+  .outer-2_3:before {
+    content: "";
+    display: block;
+    width: 100%;
+  }
+
+
+  .outer-square > .inner,
+  .outer-9_16 > .inner,
+  .outer-2_3 > .inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .outer-square:before {
+    padding-top: calc((1 / 1) * 100%);
+  }
+
+  .outer-9_16:before{
+    padding-top: calc((9 / 16) * 100%);
+  }
+
+  .outer-2_3:before{
+    padding-top: calc((2.3 / 2) * 100%);
+  }
+
+
+  .arrow {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    fill: #fff;
+    cursor: pointer;
+}
+
+.arrow--left {
+    left: 5px;
+}
+
+.arrow--right {
+    left: auto;
+    right: 5px;
+}
+
+.arrow--disabled {
+    fill: rgba(255, 255, 255, 0.5);
+}
+
+}
+
+.container{
+  @apply max-w-[1280px]
+}  
+
+
+.story-card:hover .title-box {
+  @apply opacity-0 pointer-events-none;
+}
+
+.story-card:hover .story-card-content {
+  @apply opacity-100 pointer-events-auto;
+}
+
+[color="white"] {
+  @apply text-white;
+}
+
+.accordion-item{
+  @apply !rounded-none;
+}
+
+.accordion-button{
+  @apply drop-shadow-none
+}
+
+.accordion-button::after {
+  background-image: url("/assets/img/icons/arrow-down.svg");
+  background-position: 50% 50%;
+  background-size: 100%;
+  @apply order-1 ml-0 mr-5 w-[25px] h-[25px]
+}
+
+.accordion-button:not(.collapsed)::after{
+  background-image: url("/assets/img/icons/arrow-down.svg");
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+}
+
+.accordion-button {
+  box-shadow: none;
+}
+
+/* .accordion-button::after{
+  margin: 0;
+} */
+
+#form-accordion .accordion-button::after{
+  order: 2;
+}
+
+[type="accordion-white"] .accordion-button:not(.collapsed)::after{
+  background-image: url("/assets/img/icons/arrow-down-blue.svg")!important;
+}
+
+[type="accordion-white"] .accordion-button::after {
+  background-image: url("/assets/img/icons/arrow-down-blue.svg")!important;
+  background-position: 50% 50%;
+  background-size: 100%;
+  @apply order-1 m-0 mr-5 w-[25px] h-[25px]
+}
+
+
+[type="accordion-white"] .accordion-button {
+  @apply flex justify-start border-b-4 border-blue px-0 mb-5
+}
+
+.post-content section {
+  @apply border-b-2 border-blue last:border-b-0 last:pb-[100px]
+}
+
+.mamber-card:hover .member-card-backdrop {
+  @apply h-full transition-all bg-darkBlue bg-opacity-50 duration-500 ease-out;
+}
+
+.mamber-card:hover .content-card {
+  @apply items-start top-0 transition-all duration-700;
+}
+
+.mamber-card:hover .member-content {
+  @apply opacity-100 transition duration-1000 delay-300;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+@media (min-width: 2560px) {
+  .fade-out{
+    opacity: 1;
+    display :block
+  }
+}
+
+.bg-blue h2, .bg-blue h3, .bg-blue h1,
+.bg-darkBlue h2, .bg-darkBlue h3, .bg-darkBlue h1 {
+  @apply text-white
+}
+
+
+.outer-video {
+  position: relative;
+}
+
+.outer-video:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: calc( 9 / 16 * 100% );
+}
+
+.outer-video> .inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.post-content a,
+.link-blue a {
+  @apply text-blue underline
 }

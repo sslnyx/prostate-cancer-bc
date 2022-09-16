@@ -2,43 +2,65 @@ import { useState, useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import SiteNav from "./components/SiteNav";
 import SiteFooter from "./components/SiteFooter";
-import { fetchApi } from "../lib/api";
+import { fetchApi, fetchStatic } from "../lib/api";
+import { useLocation } from "react-router-dom";
 
 function App() {
-  const [count, setCount] = useState(0);
-
+  const [staticData, setStaticData] = useState(null);
   const [data, setData] = useState(null);
-  const [loaded, setLoaded] =useState(false);
+  const [loaded, setLoaded] = useState(false);
+  const { pathname } = useLocation();
 
   useEffect(() => {
-    const fetchData = async () => {
-      const res = await fetchApi();
-      setData(res);
-      setLoaded(true);
+    const fetchStaticData = async () => {
+      return await fetchStatic();
+      // setStaticData(res)
     };
 
-    if (!data) {
-      fetchData().catch((error) => {
-        console.log(error);
-      });
+    const fetchData = async () => {
+      return await fetchApi();
+    };
+
+    if (!data && !staticData) {
+      Promise.all([fetchStatic(), fetchApi()])
+        .then((value) => {
+          console.log(value[0]);
+          setStaticData(value[0]);
+          setData(value[1]);
+          setLoaded(true);
+        })
+        .catch((error) => {
+          console.log("static: " + error);
+        });
     }
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <>
-      <div className="App overflow-hidden">
-        <SiteNav />
+      <div className="App overflow-hidden flex flex-col min-h-screen">
+        {loaded ? (
+          <>
+            <SiteNav {...staticData} />
 
-        <main>
-          <Outlet
-            context={{
-              data,
-              loaded,
-            }}
-          />
-        </main>
+            <main className="flex-1 flex flex-col">
+              <Outlet
+                context={{
+                  ...data,
+                  ...staticData,
+                  loaded,
+                }}
+              />
+            </main>
+          </>
+        ) : (
+          ""
+        )}
 
-        <SiteFooter />
+        {staticData ? <SiteFooter props={staticData} /> : ""}
       </div>
     </>
   );
