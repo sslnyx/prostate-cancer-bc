@@ -5,7 +5,11 @@ import SubscribForm from "./SubscribForm";
 
 const SiteFooter = ({
   props: {
-    company: { contact, address, googleMap },
+    company: {
+      contact,
+      address3: { street, country, province, city, postalCode },
+      googleMap,
+    },
     socialMedia,
   },
 }) => {
@@ -22,7 +26,11 @@ const SiteFooter = ({
                   src={footerLogo}
                   alt="prostatecancer-footer-logo"
                 />
-                <a className="block mb-10 xl:mb-5" target="_blank" href="https://prostatecancersupport.ca/">
+                <a
+                  className="block mb-10 xl:mb-5"
+                  target="_blank"
+                  href="https://prostatecancersupport.ca/"
+                >
                   <div className="px-[22px] py-5 border-2 border-white w-full flex justify-center items-center max-w-[450px]">
                     <p className="mr-5">
                       Explore our Canada-wide
@@ -75,7 +83,12 @@ const SiteFooter = ({
                   ))}
                 </div>
                 <a href={googleMap} target="_blank">
-                  <p dangerouslySetInnerHTML={{ __html: address }}></p>
+                  {/* <p dangerouslySetInnerHTML={{ __html: address }}></p> */}{" "}
+                  <span>{street}.,</span>
+                  <br />
+                  <span>{`${city} ${province} ${postalCode}`}</span>
+                  <br />
+                  <span>{country}</span>
                 </a>
               </div>
             </div>

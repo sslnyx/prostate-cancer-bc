@@ -199,7 +199,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
               element={<AlternativeWaysToSupportUs />}
             />
             <Route path="donate" element={<Donate />} />
-            <Route path="online-donates" element={<DonateOnline />} />
+            <Route path="donate-online" element={<DonateOnline />} />
           </Route>
 
           <Route path="*" element={<Page404 />} />

@@ -27,6 +27,7 @@
     }
   ],
   "company": {
+    "name": "Prostate Cancer Foundation BC",
     "contact": [
       {
         "title": "T",
@@ -45,6 +46,13 @@
       }
     ],
     "address": "#4 17918 55th Ave.,<br> Surrey BC V3S 6C8<br> Canada",
+    "address3": {
+      "street": "#4 17918 55th Ave",
+      "city": "Surrey",
+      "country": "Canada",
+      "postalCode": "V3S 6C8",
+      "province": "BC"
+    },
     "googleMap": "https://www.google.com/maps/place/17918+55+Ave,+Surrey,+BC+V3S+6C8/@49.101953,-122.7284766,17z/data=!3m1!4b1!4m5!3m4!1s0x5485d007bfc646af:0x5af85eec3d063b49!8m2!3d49.101953!4d-122.7262879"
   },
   "navItems": [
