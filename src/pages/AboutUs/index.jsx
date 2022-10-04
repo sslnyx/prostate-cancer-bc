@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { Outlet, useLocation, useOutletContext } from "react-router-dom";
 import PageHero from "../../components/PageHero";
+import { Helmet } from "react-helmet-async";
+import { slugToTitle } from "../../util/util";
 
 const AboutUs = () => {
   const {
@@ -49,6 +51,9 @@ const AboutUs = () => {
 
   return (
     <>
+      <Helmet>
+        <title>{slugToTitle(pathname)}</title>
+      </Helmet>
       <PageHero imgSrc={`/assets/img/${pathname}/hero.jpeg`} />
       {contextData ? <Outlet context={contextData} /> : ""}
     </>

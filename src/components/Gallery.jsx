@@ -55,7 +55,7 @@ const Gallery = ({ gallery }) => {
                 onClick={(e) =>
                   e.stopPropagation() || instanceRef.current?.prev()
                 }
-                className="w-[20%] h-full absolute left-0 bg-gradient-to-r from-darkBlue to-transparent"
+                className="w-[20%] h-full absolute left-0"
               >
                 <GalleryArrow left disabled={currentSlide === 0} />
               </div>
@@ -63,7 +63,7 @@ const Gallery = ({ gallery }) => {
                 onClick={(e) =>
                   e.stopPropagation() || instanceRef.current?.next()
                 }
-                className="w-[20%] h-full absolute right-0 bg-gradient-to-l from-darkBlue to-transparent"
+                className="w-[20%] h-full absolute right-0"
               >
                 <GalleryArrow
                   disabled={

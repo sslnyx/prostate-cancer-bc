@@ -45,6 +45,7 @@
         "href": "mailto:"
       }
     ],
+    "charityNumber": "87105-7840 RR0001",
     "address": "#4 17918 55th Ave.,<br> Surrey BC V3S 6C8<br> Canada",
     "address3": {
       "street": "#4 17918 55th Ave",
@@ -261,13 +262,13 @@
         "title": "Awareness",
         "description": "All you need to know about prostate cancer—from who needs to get checked to living well with cancer  and beyond.",
         "img": "awareness.jpg",
-        "link": "/about-prostate-cancer/living-with-prostate-cancer/incontinence"
+        "link": "/about-prostate-cancer/what-is-prostate-cancer/the-prostate"
       },
       {
         "title": "Research",
         "description": "We've had the pleasure of funding incredible research scientists and programs over the years.",
         "img": "research.jpg",
-        "link": "/about-prostate-cancer/treatment/treatment-for-localized-prostate-cancer"
+        "link": "/our-impact/grants"
       }
     ],
     "butts_in_motion": {
@@ -275,27 +276,75 @@
         {
           "location": "online",
           "list": [
-            "Free bi-weekly exercise classes",
-            "Free weekly yoga sessions"
+            {
+              "title": "Free bi-weekly exercise classes",
+              "url": "https://www.buttsinmotion.ca/fitness"
+            },
+            {
+              "title": "Free weekly yoga sessions",
+              "url": "https://www.buttsinmotion.ca/yoga"
+            }
           ],
           "imgSrc": "butts.jpeg"
         },
         {
           "location": "local",
           "list": [
-            "Cycling clubs",
-            "Dragon-boating",
-            "Golfing",
-            "Skiing",
-            "Socials and fun outings",
-            "Walking clubs"
+            {
+              "title": "Cycling clubs",
+              "url": "https://www.buttsinmotion.ca/butts-on-bikes"
+            },
+            {
+              "title": "Dragon-boating",
+              "url": "https://www.buttsinmotion.ca/butts-in-a-boat"
+            },
+            {
+              "title": "Golfing",
+              "url": "https://www.buttsinmotion.ca/calendar"
+            },
+            {
+              "title": "Skiing",
+              "url": "https://www.buttsinmotion.ca/calendar"
+            },
+            {
+              "title": "Socials and fun outings",
+              "url": "https://www.buttsinmotion.ca/butts-socials"
+            },
+            {
+              "title": "Walking clubs",
+              "url": "https://www.buttsinmotion.ca/blue-walkers"
+            }
           ],
           "imgSrc": "butts2.jpeg"
         }
       ],
       "gallery": [
         {
-          "srcSet": "/assets/img/get-support/butts-in-motion/gallery/g-1.jpeg"
+          "srcSet": "/assets/img/get-support/butts-in-motion/gallery/g-1.jpg"
+        },
+        {
+          "srcSet": "/assets/img/get-support/butts-in-motion/gallery/g-2.jpg"
+        },
+        {
+          "srcSet": "/assets/img/get-support/butts-in-motion/gallery/g-3.jpg"
+        },
+        {
+          "srcSet": "/assets/img/get-support/butts-in-motion/gallery/g-4.jpg"
+        },
+        {
+          "srcSet": "/assets/img/get-support/butts-in-motion/gallery/g-5.jpg"
+        },
+        {
+          "srcSet": "/assets/img/get-support/butts-in-motion/gallery/g-7.jpg"
+        },
+        {
+          "srcSet": "/assets/img/get-support/butts-in-motion/gallery/g-8.jpg"
+        },
+        {
+          "srcSet": "/assets/img/get-support/butts-in-motion/gallery/g-9.jpg"
+        },
+        {
+          "srcSet": "/assets/img/get-support/butts-in-motion/gallery/g-10.jpg"
         }
       ]
     },
@@ -307,7 +356,7 @@
         },
         {
           "title": "Do groups ever offer webinars or expert presentations? ",
-          "content": "<p>Many meetings include presentations by specialists and experts in prostate cancer followed by an opportunity for Q&A and a discussion period. Presentations are on a range of topics including: incontinence, sexuality, symptom management, living well with prostate cancer, and emerging research and treatment options.</p><p>Expert presentations are advertised on our support group calendar. </p>"
+          "content": "<p>Many meetings include presentations by specialists and experts in prostate cancer followed by an opportunity for Q&A and a discussion period. Presentations are on a range of topics including: incontinence, sexuality, symptom management, living well with prostate cancer, and emerging research and treatment options.</p><p>Expert presentations are advertised on our <a href='https://prostatecancersupport.ca/calendar/' target='_blank'>support group calendar</a>. </p>"
         },
         {
           "title": "What else should I know? ",
@@ -315,19 +364,19 @@
         },
         {
           "title": "I’m an advanced patient. Which group should I attend?",
-          "content": "<div><P class='font-bold'>Patients are considered advanced when their prostate cancer has:</P><ul class='mb-3 pl-4 list-disc '><li>spread (metastatic)</li><li>been labeled castrate-resistant (no longer responds to first-line ADT)</li><li>been diagnosed as high-risk or complex</li></ul><p>Our advanced prostate cancer support group meets online the second Wednesday of each month at 4 pm Pacific (7 pm Eastern). Find more information and tailored advanced support at <a target='_blank' class='text-blue underline' href='https://advancedprostatecancer.ca'>https://advancedprostatecancer.ca</a></p><p>You may also attend the local Warriors groups in Calgary and Toronto. Calgary’s Warriors group meets in-person on the second Tuesday of each month, while the Toronto Warriors group meets every other month on the last Tuesday at 7 pm Eastern. Join a meeting via the <a target='_blank' class='text-blue underline' href='https://www.prostatecancersupport.ca/calendar/'>calendar</a>.</p></div>"
+          "content": "<div><p>Our nationwide Advanced Prostate Cancer Support Group meets online the second Wednesday of each month at 4:00 pm Pacific (7:00 pm Eastern).<br><a target='_blank' href='https://mailchi.mp/prostatecancersupport/advanced'>Join the group.</a></p><p>For more information and 24/7 support for advanced patients, please visit: <a target='_blank' href='https://advancedprostatecancer.ca'>https://advancedprostatecancer.ca</a></p><p><i>Looking for local support?</i></p><p>You may also attend the local ‘Warriors’ groups in Calgary and Toronto. The Calgary Warriors meet in-person on the second Tuesday of each month, while the Toronto Warriors meet every other month on the last Tuesday at 7 pm Eastern. Join a meeting via the <a target='_blank' href='https://www.prostatecancersupport.ca/calendar/'>calendar</a>.</p>"
         },
         {
           "title": "I’m newly diagnosed and have low-risk prostate cancer. Which group should I attend? ",
-          "content": "<p>The Active Surveillance support group meets the second Thursday of each month at 4:30 pm Pacific (7:30 pm Eastern).</p><p>Active surveillance is a method of closely monitoring low-risk prostate cancer (usually defined as Gleason 6-7 or lower) with your healthcare provider(s), effectively allowing you to avoid invasive treatments, and their side effects, indefinitely. <br><a target='_blank' class='text-blue underline' href='https://mailchi.mp/prostatecancersupport/active-surveillance-mailing-list'>Join the support group</a> to learn more about this method.</p>"
+          "content": "<p>The nationwide Active Surveillance Support Group meets the second Thursday of each month at 4:30 pm Pacific (7:30 pm Eastern).</p><p>Active surveillance is a method of closely monitoring low-risk prostate cancer (usually defined as Gleason 6-7 or lower) with your healthcare provider(s), effectively allowing you to avoid invasive treatments, and their side effects, indefinitely.</p><p>Join the support group to learn more about <a target='_blank' href='https://mailchi.mp/prostatecancersupport/active-surveillance-mailing-list'>Active Surveillance</a>.</p>"
         },
         {
           "title": "I’m the partner of a prostate cancer patient. Which group should I attend? ",
-          "content": "<p>If you’re looking for information for your partner and want to attend a group with him, most support groups are happy to welcome you to their meetings.</p><p>If you’re looking for confidential support and wish to attend a partners-only meeting, you may be interested in our Partners in Prostate group. Find out more or ask questions on the forum at <a target='_blank' class='text-blue underline' href='https://www.partnersinprostate.ca/'>partnersinprostate.ca.</p>"
+          "content": "<p>Our nationwide Partners in Prostate support group meets online the last Wednesday of each month at 6:00 pm Pacific (9:00 pm Eastern). This group provides confidential support in an informal setting for partners only. <a target='_blank' href='https://mailchi.mp/prostatecancersupport/partnersinprostate'>Join the group</a>.</p><p>For more information and 24/7 support for partners, please visit: <a target='_blank' href='https://partnersinprostate.ca'>partnersinprostate.ca</a></p><p><i>Looking for local support?</i></p><p>If you’re looking for information for your partner and want to attend a group with him, most support groups are happy to welcome you and/or your partner to their meetings. Visit <a tareget='_blank' href='https://prostatecancersupport.ca'>prostatecancersupport.ca</a> to find a group near you. <a target='_blank' href='https://www.pcsedmontonwomen.ca/'>PCS Edmonton Women</a> also offers local support in the Edmonton area.</p>"
         },
         {
           "title": "I’m gay. Which group should I attend? ",
-          "content": "<p>We are currently in the process of creating a support group for gay, bi, and trans prostate cancer patients. To be put on the mailing list for this group to ensure that you’re notified about its first meeting or to request one-on-one support, please contact Richelle at <a class='text-blue underline' href='mailto:richelle@prostatecancerbc.ca'>richelle@prostatecancerbc.ca</a></p>"
+          "content": "<p>We are currently in the process of creating a support group for gay, bi, and trans prostate cancer patients. </p><p>To be put on the mailing list for this group to ensure that you’re notified about its first meeting or to request one-on-one support, please contact <a href='mailto:support@prostatecancersupport.ca'>Support Services</a>.</p>"
         }
       ]
     },
@@ -355,7 +404,7 @@
               "sub": [
                 "Electron beam",
                 "Low-Dose Rate Brachytherapy",
-                "High-Dose Rate Brachytherapy ",
+                "High-Dose Rate Brachytherapy",
                 "Stereotactic"
               ]
             },
@@ -399,11 +448,11 @@
             },
             {
               "id": "artificial_urinary_sphincter",
-              "main": " Artificial urinary sphincter or sling implant"
+              "main": "Artificial urinary sphincter or sling implant"
             },
             {
               "id": "penile_implant ",
-              "main": "Penile implant "
+              "main": "Penile implant"
             },
             {
               "id": "treatments_to_manage_lower_limb_lymphedema_post_prostatectomy",
@@ -415,7 +464,7 @@
             },
             {
               "id": "treatments_to_manage_urethral_blockage_post_prostatectomy",
-              "main": "Treatments to manage urethral blockage post-prostatectomy "
+              "main": "Treatments to manage urethral blockage post-prostatectomy"
             },
             {
               "id": "dietary_changes_to_manage_radiation_therapy_related_bowel_symptoms ",
@@ -477,5 +526,17 @@
         }
       ]
     }
+  },
+  "errorsMessageDescription": {
+    "075": "Invalid PAN length",
+    "481": "CREDIT CARD - Decline <br>Transaction not allowed to be processed by cardholder <br>Low funds/Insufficient Balance<br>Invalid Transaction<br>Transaction not allowed to be processed by merchant",
+    "477": "CREDIT CARD - Refer Call/Invalid Card Number",
+    "097": "Mod 10 check failure",
+    "480": "CREDIT CARD - Decline, Pick up card",
+    "475": "CREDIT CARD - Invalid expiration date",
+    "476": "CREDIT CARD - Invalid transaction, rejected",
+    "482": "CREDIT CARD - Expired Card",
+    "073": "Invalid route service (destination)",
+    "416": "Life cycle declines"
   }
 }

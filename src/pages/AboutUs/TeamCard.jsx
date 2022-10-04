@@ -22,7 +22,7 @@ const TeamCard = (props) => {
           ""
         )}
       </div>
-      <div className="basis-full lg:basis-1/2 lg:px-5 overflow-y-scroll max-h-[380px]">
+      <div className="basis-full lg:basis-1/2 lg:px-5 overflow-y-auto max-h-[380px]">
         <h3>{title}</h3>
         <p>{memberTypes.nodes[0].name}</p>
         <p>

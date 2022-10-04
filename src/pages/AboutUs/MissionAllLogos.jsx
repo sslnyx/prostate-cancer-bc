@@ -1,4 +1,5 @@
-import React from "react";
+
+import PageTitle from "../../components/PageTitle";
 
 const MissionAllLogos = () => {
   const logos = [
@@ -45,7 +46,7 @@ const MissionAllLogos = () => {
     {
       web: "https://us02web.zoom.us/meeting/register/tZYqdumhqT0sGdBgJVvLIcuu3PeaKopCGEpo",
       imgSrc:
-        "https://mcusercontent.com/a14f02861ddacdbff63d2e318/images/99e4a97a-38df-e5a4-1171-bb7d9b569028.png",
+        "/assets/img/about-us/mission/active-surveillance.jpg",
     },
     {
       web: "https://partnersinprostate.ca",
@@ -55,18 +56,18 @@ const MissionAllLogos = () => {
     {
       web: "https://advancedprostatecancer.ca",
       imgSrc:
-        "https://mcusercontent.com/a14f02861ddacdbff63d2e318/images/4797670d-8fc4-78e6-832f-f8f4db03eff6.png",
+        "/assets/img/about-us/mission/advance.png",
     },
     {
       web: "https://us02web.zoom.us/meeting/register/tZArfu2gqjwuGdY6zmBXq_nfvQ-am7oeLEII",
       imgSrc:
-        "https://mcusercontent.com/a14f02861ddacdbff63d2e318/images/5e9c50d4-d3e9-f0cc-d362-78feb7fd6f4f.png",
+        "/assets/img/about-us/mission/coast-to-coast.png",
     },
     ,
     {
       web: "https://buttsinmotion.ca",
       imgSrc:
-        "https://mcusercontent.com/a14f02861ddacdbff63d2e318/images/fc1212a6-9ffa-7309-86a8-a8981b182c7c.png",
+        "/assets/img/about-us/mission/butts-in-motion.png",
     },
     {
       web: "https://prostatecancersupport.ca/resources/",
@@ -85,7 +86,7 @@ const MissionAllLogos = () => {
       <section>
         <div className="container">
           <div className="text-center mb-10">
-            <i>A new era for prostate cancer support in Canada</i>
+            <h3 className="text-4xl">A new era for prostate cancer support</h3>
           </div>
 
           <div className="flex justify-center">

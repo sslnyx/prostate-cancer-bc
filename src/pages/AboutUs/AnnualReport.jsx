@@ -7,51 +7,51 @@ import PrimaryBtn from "../../components/bttons/PrimaryBtn";
 const AnnualReport = () => {
   const legend1 = [
     {
-      content: "Fundraising Events - 57.46% ( $300,150.00 )",
+      content: "Fundraising Events - 57% ( $300,150 )",
       color: "#BCD0EB",
     },
-    { color: "#88B2E0", content: "Donations - 37.54% ( $196,080.00 )" },
+    { color: "#88B2E0", content: "Donations - 38% ( $196,080 )" },
     {
       color: "#5B96CD",
-      content: "CEBA Income - 3.83% ( $20,000.00 )",
+      content: "CEBA Income - 4% ( $20,000 )",
     },
     {
       color: "#5984B1",
-      content: "Interest - 1.17% ( $6,110.00 )",
+      content: "Interest - 1% ( $6,110 )",
     },
   ];
 
   const legend2 = [
     {
-      content: "Allocation - 56.76%<br> ( $296,491.00 )",
+      content: "Allocation - 57%<br> ( $296,491 )",
       color: "#376AC3",
       sub: [
         {
-          content: "Grants - 33.50%<br> ( $175,000.00 )",
+          content: "Grants - 34%<br> ( $175,000 )",
           color: "#FFD966",
         },
         {
-          content: "Awareness And Support - 23.26%<br> ( $121,491.00 )",
+          content: "Awareness And Support - 23%<br> ( $121,491 )",
           color: "#FFE699",
         },
       ],
     },
     {
-      content: "Expenses - 26.78%<br> ( $139,919.00 )",
+      content: "Expenses - 27%<br> ( $139,919 )",
       color: "#29529C",
       sub: [
         {
-          content: "General And Administrative - 14.21%<br> ( $74,240.00 )",
+          content: "General And Administrative - 14%<br> ( $74,240 )",
           color: "#F4B183",
         },
         {
-          content: "Fundraising Costs - 12.57%<br> ( $65,679.00 )",
+          content: "Fundraising Costs - 13%<br> ( $65,679 )",
           color: "#F8CBAD",
         },
       ],
     },
     {
-      content: "Excess Revenue Over Expenses - 16.45% ( $85,930.00 )",
+      content: "Excess Revenue Over Expenses - 16% ( $85,930 )",
       color: "#ACB9DF",
     },
   ];
@@ -112,7 +112,7 @@ const AnnualReport = () => {
           <div className="py-10">
             <Row>
               <Col w={6}>
-                <img src="/assets/img/about-us/annual-report/chart-1.svg" />
+                <img src="/assets/img/about-us/annual-report/chart1-0914.jpg" />
               </Col>
               <Col w={6}>
                 <ul>
@@ -125,6 +125,7 @@ const AnnualReport = () => {
                 </ul>
               </Col>
             </Row>
+            
           </div>
         </div>
       </section>
@@ -138,7 +139,7 @@ const AnnualReport = () => {
           <div className="py-10 text-xs">
             <Row>
               <Col w={6}>
-                <img src="/assets/img/about-us/annual-report/chart-2.svg" />
+                <img src="/assets/img/about-us/annual-report/chart2-0914.jpg" />
               </Col>
               <Col w={6}>
                 <ul>
@@ -172,9 +173,13 @@ const AnnualReport = () => {
                       )}
                     </li>
                   ))}
+
+                  <li className="mt-5 font-bold text-base text-center">Total Revenue $436,410</li>
                 </ul>
+                
               </Col>
             </Row>
+            
           </div>
 
           <div className="flex justify-center">

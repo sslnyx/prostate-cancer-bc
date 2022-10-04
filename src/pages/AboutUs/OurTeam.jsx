@@ -18,7 +18,7 @@ const OurTeam = () => {
         p1="OUR"
         p2="TEAM"
         className="title-light"
-        description="A small team with a giant heart, our team continues to push the envelope and bring more services and awareness opportunities forward. A grassroots team that continues to work tirelessly for men and their families across Canada. "
+        description="A grassroots team that continues to work tirelessly for men and their families across Canada, we continue to push the envelope, bringing more awareness and service opportunities forward."
       />
       <section>
         <div className="container !max-w-[1440px]">
@@ -108,6 +108,8 @@ const OurTeam = () => {
           className="title-light"
           description="<p>Our Board Committees provide a practical way to structure our Board’s work and ensure that they can adapt quickly to the changing demands and needs of our communities. </p><p>We are incredibly grateful for our committed board members who go above and beyond to share their expertise and skills with the Foundation and the communities we serve. </p>"
         />
+
+        <div className="mb-10"></div>
 
         <div className="container">
           <Row className="-mx-3 mb-5">

@@ -3,7 +3,7 @@ import AccordionCard from "../../../components/AccordionCard";
 
 const PatientEducationWellnessPrograms = () => {
   return (
-    <div className="px-10">
+    <div className="md:px-10">
       <AccordionCard title="Prostate Cancer Supportive Care Program">
         <p>
           The PCSC Program is a comprehensive survivorship program developed in
@@ -20,7 +20,7 @@ const PatientEducationWellnessPrograms = () => {
           coping along the entire disease trajectory to serve both the patient
           and their partner’s physical and psychological needs.
         </p>
-        <p>
+        <div className="mb-5">
           The PCSC Program currently includes seven modules which men can take
           part in with more modules in development. These modules include group
           educational sessions and clinical services in the following areas:
@@ -33,7 +33,7 @@ const PatientEducationWellnessPrograms = () => {
             <li>Clinical Counselling</li>
             <li>Advanced Disease Management </li>
           </ul>
-        </p>
+        </div>
 
         <PrimaryBtn href="https://pcscprogram.ca/" className="btn-main mb-3">
           <span>Learn More</span>
@@ -52,19 +52,22 @@ const PatientEducationWellnessPrograms = () => {
             Androgen Deprivation Therapy (ADT) is an effective treatment for
             prostate cancer, but it also has many side effects.
           </p>
+
           <p>
             The Androgen Deprivation Therapy Educational Program is a free
             1.5-hour session, endorsed by the Canadian Urological Association
             during which patients and loved ones will:
-            <ul className="list-disc list-inside py-3">
-              <li>Learn about side effects of ADT </li>
-              <li>Learn how to manage side effects</li>
-              <li>
-                Complete goal setting exercises to teach you how to manage ADT
-                side effects
-              </li>
-            </ul>
           </p>
+
+          <ul className="list-disc list-inside py-3">
+            <li>Learn about side effects of ADT </li>
+            <li>Learn how to manage side effects</li>
+            <li>
+              Complete goal setting exercises to teach you how to manage ADT
+              side effects
+            </li>
+          </ul>
+
           <p>
             The program is designed for both patients and their partners or
             loved ones. Patients who are not partnered are encouraged to invite

@@ -8,7 +8,7 @@ const ReefKnotKits = () => {
         p1="FREE INFOMATION PACKAGES"
         p2="REEF KNOT KITS"
         className="title-light"
-        description="Our <span class='text-blue'>FREE</span>, signature Reef Knot Kits include a multitude of resources to aid you in researching your diagnosis and making difficult decisions surrounding your treatment options. Only when you know what is best for you and your family can you make an informed decision."
+        description="Our signature Reef Knot Kits include a multitude of resources to aid you in researching your diagnosis and making difficult decisions surrounding your treatment options. Only when you know what is best for you and your family can you make an informed decision."
       />
 
       <section>

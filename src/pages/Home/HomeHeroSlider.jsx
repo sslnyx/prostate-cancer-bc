@@ -17,15 +17,48 @@ const HomeHeroSlider = () => {
 
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded, setLoaded] = useState(false);
-  const [sliderRef, instanceRef] = useKeenSlider({
-    initial: 0,
-    slideChanged(slider) {
-      setCurrentSlide(slider.track.details.rel);
-    },
-    created() {
-      setLoaded(true);
-    },
-  });
+  const [sliderRef, instanceRef] = useKeenSlider(
+    {
+      loop: true,
+      initial: 0,
+      slideChanged(slider) {
+        setCurrentSlide(slider.track.details.rel);
+      },
+      created() {
+        setLoaded(true);
+      },
+    }
+    // [
+    //   (slider) => {
+    //     let timeout;
+    //     let mouseOver = false;
+    //     function clearNextTimeout() {
+    //       clearTimeout(timeout);
+    //     }
+    //     function nextTimeout() {
+    //       clearTimeout(timeout);
+    //       if (mouseOver) return;
+    //       timeout = setTimeout(() => {
+    //         slider.next();
+    //       }, 3000);
+    //     }
+    //     slider.on("created", () => {
+    //       slider.container.addEventListener("mouseover", () => {
+    //         mouseOver = true;
+    //         clearNextTimeout();
+    //       });
+    //       slider.container.addEventListener("mouseout", () => {
+    //         mouseOver = false;
+    //         nextTimeout();
+    //       });
+    //       nextTimeout();
+    //     });
+    //     slider.on("dragStarted", clearNextTimeout);
+    //     slider.on("animationEnded", nextTimeout);
+    //     slider.on("updated", nextTimeout);
+    //   },
+    // ]
+  );
 
   return (
     <div className="py-0">
@@ -42,10 +75,10 @@ const HomeHeroSlider = () => {
                     {title}
                   </h2>
 
-                  <p className="max-w-[600px] text-3xl mb-5">{description}</p>
+                  <p className="max-w-[600px] text-2xl mb-5">{description}</p>
 
                   {i === 0 ? (
-                    <div className="flex -mx-5">
+                    <div className="flex -mx-5 mb-5">
                       <img
                         className="px-5"
                         src="/assets/img/logos/pcf-logo-white.png"
@@ -91,18 +124,22 @@ const HomeHeroSlider = () => {
                     <h2 className="text-white">{title}</h2>
                     <p className="">{description}</p>
                     {i === 0 ? (
-                      <div className="flex -mx-5">
-                        <img
-                          className="px-5"
-                          src="/assets/img/logos/pcf-logo-white.png"
-                        />
-                        <a
-                          className="px-5"
-                          target="_blank"
-                          href="https://prostatecancersupport.ca"
-                        >
-                          <img src="/assets/img/logos/pcfca-logo-white.png" />
-                        </a>
+                      <div className="flex justify-center">
+                        <div className="flex -mx-3 mb-5 items-center justify-center max-w-[500px]">
+                          <div className="px-3 basis-[62%]">
+                            <img className="w-full" src="/assets/img/logos/pcf-logo-white.png" />
+                          </div>
+                          <a
+                            className="px-3 basis-[38%]"
+                            target="_blank"
+                            href="https://prostatecancersupport.ca"
+                          >
+                            <img
+                              className="h-full w-full"
+                              src="/assets/img/logos/pcfca-logo-white.png"
+                            />
+                          </a>
+                        </div>
                       </div>
                     ) : (
                       ""

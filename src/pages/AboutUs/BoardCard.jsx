@@ -11,7 +11,7 @@ const BoardCard = (props) => {
     <div className="relative mamber-card overflow-hidden h-[450px] md:min-w-[375px]">
       <div className="member-card-backdrop absolute w-full h-[20%] left-0 bottom-0 bg-gradient-to-t from-darkBlue to-transparent"></div>
       <div
-        className={`content-card overflow-scroll absolute w-full h-full flex items-start text-left text-white z-10 ${
+        className={`content-card overflow-auto absolute w-full h-full flex items-start text-left text-white z-10 ${
           !professionalDesignation &&
           (memberTypes?.nodes[0].name === "Director" ||
             memberTypes?.nodes[0].name === "Medical Advisor")

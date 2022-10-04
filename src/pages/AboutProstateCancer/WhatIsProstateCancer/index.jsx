@@ -1,10 +1,15 @@
 import { Outlet } from "react-router-dom";
 import SectionTitle from "../../../components/SectionTitle";
+import PageHero from "../../../components/PageHero";
 
 const WhatIsProstateCancer = () => {
   return (
     <>
-      <section className="border-none">
+      <PageHero
+        title="What is<br /> Prostate Cancer?"
+        imgSrc={`/assets/img/about-prostate-cancer/hero.jpeg`}
+      />
+      {/* <section className="border-none">
         <div className="container">
           <SectionTitle
             p1="What is"
@@ -12,9 +17,9 @@ const WhatIsProstateCancer = () => {
             className="title-light"
           />
         </div>
-      </section>
+      </section> */}
 
-      <div className="container">
+      <div>
         <Outlet />
       </div>
     </>

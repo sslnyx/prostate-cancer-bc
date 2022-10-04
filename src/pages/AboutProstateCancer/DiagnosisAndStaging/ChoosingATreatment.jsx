@@ -4,13 +4,15 @@ import AccordionTitle from "../../../components/AccordionTitle";
 import AccordionContent from "../../../components/AccordionContent";
 import { Link } from "react-router-dom";
 import YoutubeIframe from "../../../components/post-section/YoutubeIframe";
+import PageTitle from "../../../components/PageTitle";
 
 const ChoosingATreatment = () => {
   return (
     <div>
+        <PageTitle p1="Choosing" p2="a Treatment" className="title-light" />
+
       <section>
-        <PostTitle>Choosing a Treatment</PostTitle>
-        <div className="mb-10"></div>
+        {/* <PostTitle>Choosing a Treatment</PostTitle> */}
         <p className="max-w-[600px] mx-auto mb-10">
           Most patients with low- to moderate- risk prostate cancer will have
           time to think about their treatment choice. Here are some things to
@@ -18,7 +20,6 @@ const ChoosingATreatment = () => {
         </p>
 
         <div className="max-w-[1000px] mx-auto">
-          <YoutubeIframe videoId="Al8HEFr44C0" />
 
           <div className="mb-10"></div>
 
@@ -120,7 +121,7 @@ const ChoosingATreatment = () => {
             </div>
           </Accordion>
 
-          <p className="text-xs">
+          {/* <div className="text-xs">
             Adapted from:
             <a
               href="https://choosingwiselycanada.org/wp-content/uploads/2017/06/Prostate-cancer-EN.pdf"
@@ -138,9 +139,13 @@ const ChoosingATreatment = () => {
               But What If...? Regret and Prostate Cancer Treatment Choices - Dr.
               Christopher Wallis
             </a>
-          </p>
+          </div> */}
 
           <div className="mb-20"></div>
+
+          <YoutubeIframe videoId="Al8HEFr44C0" />
+          <div className="mb-20"></div>
+
           <YoutubeIframe videoId="zhv6vev0Fpc" />
         </div>
       </section>

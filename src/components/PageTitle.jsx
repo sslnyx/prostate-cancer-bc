@@ -13,14 +13,16 @@ const PageTitle = ({
   return (
     <section className="border-none">
       <div className="container">
-        <div className="flex flex-row flex-wrap -mx-10 items-center">
+        <div className="flex flex-row flex-wrap md:-mx-10 items-center">
           <div
-            className={`basis-full md:basis-1/2 px-10 flex ${
+            className={`basis-full ${
+              description || children ? "md:basis-1/2 mb-5" : ""
+            } md:px-10 md:mb-0 flex ${
               reverse ? "order-2 justify-end" : "order-1 justify-start"
             }`}
           >
             {logoSrc ? (
-              <img className="max-h-[250px]" src={logoSrc} alt="logo" />
+              <img className="max-w-[180px] md:max-w-[350px] mx-auto md:mx-0 max-h-[250px]" src={logoSrc} alt="logo" />
             ) : p1 && p2 ? (
               <SectionTitle p1={p1} p2={p2} className={className} />
             ) : (
@@ -32,7 +34,9 @@ const PageTitle = ({
           </div>
 
           <div
-            className={`basis-full md:basis-1/2 px-10 flex ${
+            className={`basis-full ${
+              description || children ? "md:basis-1/2" : ""
+            } md:px-10 flex ${
               reverse ? "order-1 md:justify-start" : "order-2 md:justify-end"
             }`}
           >

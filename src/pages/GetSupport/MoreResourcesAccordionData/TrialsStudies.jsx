@@ -3,7 +3,7 @@ import PrimaryBtn from "../../../components/bttons/PrimaryBtn";
 
 const TrialsStudies = () => {
   return (
-    <div className="px-10">
+    <div className="md:px-10">
       <AccordionCard title="Canadian Clinical Cancer Trials">
         <p>
           Canadian Cancer Trials is a search engine for clinical trials
@@ -11,7 +11,7 @@ const TrialsStudies = () => {
           with the key word: “prostate.”
         </p>
 
-        <p className="mb-5">
+        <div className="mb-5">
           You can further refine search results using the filters available on
           the menu on the left-hand side, including by:
           <div className="mb-3"></div>
@@ -34,7 +34,7 @@ const TrialsStudies = () => {
               </ul>
             </li>
           </ul>
-        </p>
+        </div>
 
 
         <div>

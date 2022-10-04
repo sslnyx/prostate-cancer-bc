@@ -21,7 +21,7 @@ const PatientStories = () => {
         <div className="container">
           <Row className="-mx-5">
             {stories?.nodes?.map((data) => (
-              <Col gap={5} w={4}>
+              <Col key={data.id} gap={5} w={4}>
                 <StoryCard key={data.id} {...data} />
               </Col>
             ))}

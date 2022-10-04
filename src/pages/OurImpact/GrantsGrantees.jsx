@@ -10,16 +10,18 @@ const GrantsGrantees = () => {
 
   nodes.sort((a, b) => b.name - a.name);
 
+  // console.log(nodes)
+
   return (
     <>
       {nodes.map(({ grantees, name, id, description }) => (
-        <div className="mb-5 last:mb-0" key={id}>
+        <div className="mb-20 last:mb-0" key={id}>
           <div className="text-center">
             <h2 className="text-blue">{name}</h2>
             <p>{description}</p>
             <Row className="-mx-3">
               {grantees?.nodes.map((grantee) => (
-                <Col gap={3} w={4}>
+                <Col key={grantee.id} gap={3} w={4}>
                   <GranteeCard {...grantee} />
                 </Col>
               ))}

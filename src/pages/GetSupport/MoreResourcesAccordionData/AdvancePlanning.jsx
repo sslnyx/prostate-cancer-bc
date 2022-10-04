@@ -3,7 +3,7 @@ import PrimaryBtn from "../../../components/bttons/PrimaryBtn";
 
 const AdvancePlanning = () => {
   return (
-    <div className="px-10">
+    <div className="md:px-10">
       <AccordionCard title="Dying with Dignity">
         <p>
           Dying with Dignity Canada’s Advance Care Planning (ACP) Kit invites

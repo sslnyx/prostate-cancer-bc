@@ -84,7 +84,7 @@ const OurVision = () => {
               <div className="flex flex-1 bg-blue">
                 <div className="basis-7/12 flex text-center items-center justify-center">
                   <OurVisionCounts
-                    number={88}
+                    number={92}
                     title="Research<br> Projects Funded"
                   />
                 </div>

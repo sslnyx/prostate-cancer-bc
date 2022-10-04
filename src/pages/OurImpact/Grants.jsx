@@ -5,19 +5,21 @@ import Row from "../../components/rows-cols/Row";
 import Col from "../../components/rows-cols/Col";
 import PrimaryBtn from "../../components/bttons/PrimaryBtn";
 import GrantsGrantees from "./GrantsGrantees";
-import { useLocation } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 
-const Grants = () => {
+const Grants = (props) => {
   //   console.log(nodes);
+
+  // const params = useParams();
 
   const applyForGrant = useRef();
 
-  const { hash, pathname } = useLocation();
+  const location = useLocation();
   const [imgLoaded, setImgLoaded] = useState();
   const [img2Loaded, setImg2Loaded] = useState();
 
   const scrollHandler = () => {
-    console.log("kkk");
+    // console.log("kkk");
     window.scrollTo({
       left: 0,
       top: applyForGrant.current.offsetTop,
@@ -26,12 +28,13 @@ const Grants = () => {
   };
 
   useEffect(() => {
+    // console.log(location.key);
     // console.log(applyForGrant.current.id);
     if (
       imgLoaded &&
       img2Loaded &&
       applyForGrant &&
-      hash === `#${applyForGrant.current.id}`
+      location?.hash === `#${applyForGrant.current.id}`
     ) {
       setTimeout(() => {
         window.scrollTo({
@@ -41,7 +44,7 @@ const Grants = () => {
         });
       }, 0);
     }
-  }, [imgLoaded, img2Loaded, hash]);
+  }, [imgLoaded, img2Loaded, location.key]);
 
   return (
     <div>
@@ -49,7 +52,7 @@ const Grants = () => {
 
       <PageTitle
         title="Grants"
-        description="Each year, the Foundation provides funding to students and post doctoral researchers to help further enhance their work in supporting prostate cancer research. Over the last 20 years, PCFBC has awarded over $1.8M in grants and over 88 projects."
+        description="Each year, the Foundation provides funding to students and post doctoral researchers to help further enhance their work in supporting prostate cancer research. Since the conception of its Grant-In-Aide program, PCFBC has awarded over $2.68 M in grants and funded 92 projects."
       />
 
       <section>

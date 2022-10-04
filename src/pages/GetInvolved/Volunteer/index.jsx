@@ -34,14 +34,10 @@ const Volunteer = () => {
             </li>
           </ul>
         </div>
-      </section>
 
-      <section>
         <div className="container !max-w-[850px]">
           <div>
-            <h3 className="mb-5">
-              See some of our current volunteer opportunities below:
-            </h3>
+            <h3 className="mb-5">current specific volunteer opportunities:</h3>
 
             <a
               href="/assets/pdfs/call-for-photographers.pdf"
@@ -78,16 +74,16 @@ const Volunteer = () => {
             </div>
           </div>
         </div>
-      </section>
 
-      <section>
+        <div className="mb-5"></div>
+
         <VolunteerForm />
       </section>
 
       <section>
         <div className="container max-w-[1024px]">
           <div className="flex flex-row flex-wrap -mx-10">
-            <div className="basis-full md:basis-1/2 px-10">
+            <div className="basis-full md:basis-1/2 px-10 mb-10 md:mb-0">
               <img
                 className="w-full"
                 src="/assets/img/get-involved/volunteer/board.jpeg"
@@ -97,7 +93,7 @@ const Volunteer = () => {
 
             <div className="basis-full md:basis-1/2 px-10">
               <div>
-                <h2 className="text-[5rem] leading-[5.5rem] mb-5">
+                <h2 className="text-6xl md:text-7xl mb-5">
                   Volunteering for the Board
                 </h2>
                 <p>

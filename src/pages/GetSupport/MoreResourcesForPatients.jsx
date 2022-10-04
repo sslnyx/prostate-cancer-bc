@@ -29,23 +29,17 @@ const MoreResourcesForPatients = () => {
             src="/assets/img/get-support/more-resources-for-patients/patients.jpeg"
             alt=""
           />
-        </div>
-      </section>
 
-      <section>
-        <div className="container">
-          <Accordion type="white" id="more-resources-accordion">
+          <div className="mb-10"></div>
+
+          <Accordion type="white">
             <div className="accordion-item border-t-0 border-l-0 border-r-0 rounded-none">
               <AccordionTitle
                 title="Financial Help and Resources"
                 type="white"
                 idx={0}
               />
-              <AccordionContent
-                idx={0}
-                id="more-resources-accordion"
-                type="white"
-              >
+              <AccordionContent idx={0} type="white">
                 <FinancialHelpAndResources />
               </AccordionContent>
             </div>
@@ -56,11 +50,7 @@ const MoreResourcesForPatients = () => {
                 type="white"
                 idx={1}
               />
-              <AccordionContent
-                idx={1}
-                id="more-resources-accordion"
-                type="white"
-              >
+              <AccordionContent idx={1} type="white">
                 <PatientEducationWellnessPrograms />
               </AccordionContent>
             </div>
@@ -71,33 +61,21 @@ const MoreResourcesForPatients = () => {
                 type="white"
                 idx={2}
               />
-              <AccordionContent
-                idx={2}
-                id="more-resources-accordion"
-                type="white"
-              >
+              <AccordionContent idx={2} type="white">
                 <MediaBooksPodcastsNewsletters />
               </AccordionContent>
             </div>
 
             <div className="accordion-item border-t-0 border-l-0 border-r-0 rounded-none">
               <AccordionTitle title="Advance Planning" type="white" idx={3} />
-              <AccordionContent
-                idx={3}
-                id="more-resources-accordion"
-                type="white"
-              >
+              <AccordionContent idx={3} type="white">
                 <AdvancePlanning />
               </AccordionContent>
             </div>
 
             <div className="accordion-item border-t-0 border-l-0 border-r-0 rounded-none">
               <AccordionTitle title="Trials & Studies" type="white" idx={4} />
-              <AccordionContent
-                idx={4}
-                id="more-resources-accordion"
-                type="white"
-              >
+              <AccordionContent idx={4} type="white">
                 <TrialsStudies />
               </AccordionContent>
             </div>
@@ -108,11 +86,7 @@ const MoreResourcesForPatients = () => {
                 type="white"
                 idx={5}
               />
-              <AccordionContent
-                idx={5}
-                id="more-resources-accordion"
-                type="white"
-              >
+              <AccordionContent idx={5} type="white">
                 <PrivatelyProvidedHealthServices />
               </AccordionContent>
             </div>

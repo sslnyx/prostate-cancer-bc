@@ -8,20 +8,18 @@ const EventsArchive = () => {
   return (
     <div>
       <PageHero imgSrc="/assets/img/get-involved/hero.jpeg" />
-
-      <div className="container">
-        <PageTitle
-          p1="Find An"
-          p2="Event"
-          className="title-light"
-          description="No matter what you’re into – whether it’s motorcycles, winter
+      <PageTitle
+        p1="Find An"
+        p2="Event"
+        className="title-light"
+        description="No matter what you’re into – whether it’s motorcycles, winter
               sports, family fun, golfing, visiting local establishments, or
               silent auctions--there’s a fun way for you and your family to get
               involved in supporting Canadian prostate cancer patients. Join us
               in our mission to advocate for prostate cancer patients across
               Canada."
-        />
-
+      />
+      <div className="container">
         <section>
           <div className="max-w-[600px] mx-auto">
             <p>
@@ -40,12 +38,12 @@ const EventsArchive = () => {
 
             <p>
               If you’re a business interested in sponsoring an event or donating
-              prizing, please get in{" "}
+              prizing, please{" "}
               <a
                 className="underline text-blue"
                 href="mailto: nicole@prostatecancerbc.ca"
               >
-                touch with our Event Manager
+                get in touch with our Event Manager
               </a>
               .
             </p>

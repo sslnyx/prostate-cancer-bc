@@ -79,7 +79,7 @@ const SupportGroupCouncils = () => {
             </p>
             <span>Reach out to </span>
             <a
-              href="support@prostatecancersupport.ca"
+              href="mailto:support@prostatecancersupport.ca"
               className="underline text-blue"
             >
               support@prostatecancersupport.ca
@@ -99,7 +99,7 @@ const SupportGroupCouncils = () => {
               Canada.
             </p>
             <p>
-              Our missing is to assist and support prostate cancer support
+              Our mission is to assist and support prostate cancer support
               groups across Canada by providing guidance, resources, and
               networking leadership.
             </p>

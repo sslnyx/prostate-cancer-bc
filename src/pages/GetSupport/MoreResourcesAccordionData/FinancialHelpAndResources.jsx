@@ -25,7 +25,7 @@ const FinancialHelpAndResources = () => {
     },
   ];
   return (
-    <div className="px-10">
+    <div className="md:px-10">
       <AccordionCard title="Accommodations during treatment">
         <ul className="list-disc pl-4">
           <li className="py-1">

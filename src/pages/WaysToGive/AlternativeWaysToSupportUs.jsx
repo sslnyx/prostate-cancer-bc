@@ -15,17 +15,12 @@ const AlternativeWaysToSupportUs = () => {
 
       <section>
         <div className="container !max-w-[1000px] link-blue">
-          <WaysBox title="Host a 3rd party event">
+          <WaysBox title="Host a 3<sup>rd</sup> party event">
             <p>
               Want to throw your own bake sale, pub event, golf tournament, or
               other fundraiser to support Prostate Cancer Foundation BC? Get in
               touch with{" "}
-              <a
-                href="mailto:nicole@prostatecancerbc.ca"
-                className="!text-black"
-              >
-                our Event Manager
-              </a>{" "}
+              <a href="mailto:nicole@prostatecancerbc.ca">our Event Manager</a>{" "}
               for more information.
             </p>
           </WaysBox>
@@ -33,7 +28,7 @@ const AlternativeWaysToSupportUs = () => {
             <p>
               A gift of publicly-traded securities, such as stocks, bonds or
               mutual funds, can be made to the Foundation. For more information,
-              please <a href="#">click here</a>.
+              please <a target="_blank" href="/assets/pdfs/PCFBC_publicly-traded-securities-to-pcfbc-updated-dec-2020-merged.pdf">click here</a>.
             </p>
           </WaysBox>
           <WaysBox title="Donate a car">
@@ -67,70 +62,70 @@ const AlternativeWaysToSupportUs = () => {
           <WaysBox title="Contribute to our Endowment fund">
             <p>
               Make a donation to the Foundation's endowment fund to help us make
-              all donations go further.
+              all donations go further. Please <a href="/about-us/contact-us">contact us</a> to learn more.
             </p>
           </WaysBox>
           <WaysBox title="Consider Legacy giving">
-            <div>
-              <p className="text-blue">What's your Legacy?</p>
+            <div className="mb-5">
+              <p className="text-blue font-bold">What's your Legacy?</p>
 
               <p>We think there are two times you can create your Legacy:</p>
             </div>
 
             <div>
-              <ul className="list-decimal pl-4 text-blue">
-                <li>
+              <ul className="list-decimal pl-4 text-blue font-bold">
+                <li className="mb-5">
                   Now.
-                  <p className="text-black">
+                  <p className="text-black font-[300]">
                     By 'Now' we mean that you create a Legacy with Prostate
                     Cancer Foundation BC that you can see the benefits of and
                     enjoy… Now! We'll work with you to find the right project
                     that can be your Legacy… a Legacy you see the results of
                     every day! A Legacy that will make you proud and happy
                     because you can see its benefits… today!{" "}
-                    <a href="tel:+">Call us</a> and let's start making your
-                    legacy happen now.
+                    <a href="tel:604-574-4012">Call us</a> and let's start
+                    making your legacy happen now.
                   </p>
-                  <li>
-                    Later.
-                    <p className="text-black">
-                      Yes you can create some of your Legacies that all of us at
-                      Prostate Cancer Foundation BC will thank you for when we
-                      wish you a final goodbye. Here's how:
-                    </p>
-                    <ul className="text-black list-disc pl-5">
-                      <li>
-                        Prepare a will. Without a will you lose control over
-                        your property at death.
-                      </li>
-                      <li>Leave a gift in your will.</li>
-                      <li>
-                        Leave a gift of a specific dollar amount or a percentage
-                        of the assets in your will.
-                      </li>
-                      <li>Consider using assets for your charitable gift.</li>
-                      <li>
-                        Name Prostate Cancer Foundation BC as the beneficiary of
-                        an existing or paid-up life insurance policy.
-                      </li>
-                      <li>
-                        Name Prostate Cancer Foundation BC as a beneficiary of
-                        your RRSP, RRIF or pension.
-                      </li>
-                      <li>Remember loved ones with memorial gifts.</li>
-                      <li>
-                        Encourage family and friends to leave gifts in their
-                        will.
-                      </li>
-                    </ul>
-                  </li>
+                </li>
+
+                <li>
+                  Later.
+                  <p className="text-black font-[300]">
+                    Yes you can create some of your Legacies that all of us at
+                    Prostate Cancer Foundation BC will thank you for when we
+                    wish you a final goodbye. Here's how:
+                  </p>
+                  <ul className="text-black list-disc pl-5 font-[300]">
+                    <li>
+                      Prepare a will. Without a will you lose control over your
+                      property at death.
+                    </li>
+                    <li>Leave a gift in your will.</li>
+                    <li>
+                      Leave a gift of a specific dollar amount or a percentage
+                      of the assets in your will.
+                    </li>
+                    <li>Consider using assets for your charitable gift.</li>
+                    <li>
+                      Name Prostate Cancer Foundation BC as the beneficiary of
+                      an existing or paid-up life insurance policy.
+                    </li>
+                    <li>
+                      Name Prostate Cancer Foundation BC as a beneficiary of
+                      your RRSP, RRIF or pension.
+                    </li>
+                    <li>Remember loved ones with memorial gifts.</li>
+                    <li>
+                      Encourage family and friends to leave gifts in their will.
+                    </li>
+                  </ul>
                 </li>
               </ul>
               <div className="mb-5"></div>
               <p>
-                So, it's your choice: Now or Later. Give us{" "}
-                <a href="tel:+">call</a> and let us help put a Legacy Smile on
-                your face!
+                So, it's your choice: Now or Later. Give us a{" "}
+                <a href="tel:604-574-4012">call</a> and let us help put a Legacy
+                Smile on your face!
               </p>
               <p>
                 Note: To leave a tax deductible donation, gift or legacy to your
@@ -141,7 +136,7 @@ const AlternativeWaysToSupportUs = () => {
               </p>
               <p>
                 For other options to support Prostate Cancer Foundation BC,
-                please contact our office:{" "}
+                please contact our office:{" "} <br className="hidden md:block" />
                 <a href="tel:604-574-4012">604-574-4012</a> or{" "}
                 <a href="mailto:info@prostatecancerbc.ca">
                   info@prostatecancerbc.ca
@@ -150,12 +145,14 @@ const AlternativeWaysToSupportUs = () => {
               </p>
             </div>
           </WaysBox>
-          <WaysBox title="Sponsor a grant">
+
+          <WaysBox title="Support a Research Grant">
             <p>
-              Provide a donation (minimum $25,000) and a research grant can be
-              named in your honour.
+              Provide a donation (minimum $35,000) and a research grant can be
+              named in your honour. Please <a href="/about-us/contact-us">contact us</a> to learn more.
             </p>
           </WaysBox>
+
           <WaysBox title="Become a corporate sponsor">
             <p>
               Please contact{" "}

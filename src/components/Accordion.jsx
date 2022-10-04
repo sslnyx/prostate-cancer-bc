@@ -1,7 +1,9 @@
+import { forwardRef } from "react";
+
 import AccordionContent from "./AccordionContent";
 import AccordionTitle from "./AccordionTitle";
 
-const Accordion = ({ data, id, type, children }) => {
+const Accordion = forwardRef(({ data, id, type, children }, ref) => {
   return (
     <div
       type={`accordion-${type}`}
@@ -22,11 +24,11 @@ const Accordion = ({ data, id, type, children }) => {
               }`}
             >
               <AccordionTitle {...contentData} idx={i} type={type} />
-              <AccordionContent {...contentData} idx={i} id={id} type={type} />
+              <AccordionContent {...contentData} idx={i} id={id} type={type} ref={ref}/>
             </div>
           ))}
     </div>
   );
-};
+});
 
 export default Accordion;

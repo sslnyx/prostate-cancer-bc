@@ -15,7 +15,7 @@ const StoryCard = (props) => {
         <div className="relative h-full w-full bg-gray-200">
           <Link to={`/our-impact/patient-stories/${slug}`}>
             <img
-              src={featuredImage.sourceUrl}
+              srcSet={featuredImage.srcSet}
               className="absolute top-0 left-0 h-full w-full object-cover"
             />
 

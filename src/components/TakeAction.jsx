@@ -23,13 +23,13 @@ const TakeAction = () => {
           </p>
 
           <div className="flex flex-col md:flex-row justify-center">
-            <PrimaryBtn className="btn-main mr-0 md:mr-10 mb-5">
+            <PrimaryBtn href="/get-involved/find-an-event" className="btn-main mr-0 md:mr-10 mb-5">
               PARTICIPATE
             </PrimaryBtn>
-            <PrimaryBtn className="btn-orange mr-0 md:mr-10 mb-5">
+            <PrimaryBtn href="/ways-to-give/donate" className="btn-orange mr-0 md:mr-10 mb-5">
               GIVE TODAY
             </PrimaryBtn>
-            <PrimaryBtn className="btn-main">VOLUNTEER</PrimaryBtn>
+            <PrimaryBtn href="/get-involved/volunteer" className="btn-main">VOLUNTEER</PrimaryBtn>
           </div>
         </div>
       </div>

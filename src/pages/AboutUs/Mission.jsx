@@ -9,9 +9,10 @@ const Mission = () => {
     <div>
       <PageTitle
         title="MISSION"
-        description="To provide leadership and resources for prostate cancer support, education and research across Canada. "
+        description="To provide leadership and resources for prostate cancer support, education and research. "
       />
 
+      <div className="mb-10 md:mb-16"></div>
       <MissionAllLogos />
 
       <section>
@@ -32,12 +33,11 @@ const Mission = () => {
                 prostate cancer support, awareness, and research for 25 years.
               </p>
               <p>
-                Prostate Cancer Foundation BC started as a simple phone service:
-                a phone number in BC that you could call to receive support for
-                prostate disease. Over the years, it has grown into an umbrella
-                organization for several fundraiser events, support initiatives,
+                What started as a phone number in BC that you could call to
+                receive support for prostate disease has grown into an umbrella
+                organization for several fundraiser events, support initiatives
                 and research grants – all dedicated to the most common cancer in
-                British Columbian men.
+                men.
               </p>
               <p>
                 In 2020, Prostate Cancer Foundation BC proudly expanded its

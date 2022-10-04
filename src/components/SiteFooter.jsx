@@ -19,15 +19,15 @@ const SiteFooter = ({
       <section className="py-[50px] bg-darkBlue text-white">
         <div className="container">
           <div className="flex flex-row flex-wrap justify-between -mx-10">
-            <div className="basis-full lg:basis-4/12 px-10 mb-10 xl:mb-0">
-              <div className="flex flex-col items-center xl:items-start justify-between h-full">
+            <div className="basis-full lg:basis-4/12 px-10 mb-10 lg:mb-0">
+              <div className="flex flex-col items-center lg:items-start justify-between h-full">
                 <img
                   className="w-[250px] mb-10 lg:mb-5"
                   src={footerLogo}
                   alt="prostatecancer-footer-logo"
                 />
                 <a
-                  className="block mb-10 xl:mb-5"
+                  className="block mb-0 lg:mb-5"
                   target="_blank"
                   href="https://prostatecancersupport.ca/"
                 >
@@ -43,7 +43,7 @@ const SiteFooter = ({
                     />
                   </div>
                 </a>
-                <div className="flex items-center mb-3 lg:mb-0">
+                <div className="hidden items-center mb-3 lg:mb-0 lg:flex">
                   {socialMedia.map(({ img, url }, i) => (
                     <div key={i} className="mr-3 last:mr-0">
                       <a href={url} target="_blank">
@@ -57,11 +57,11 @@ const SiteFooter = ({
 
             <div className="flex flex-wrap basis-full lg:basis-5/12 px-10 justify-center mb-10 lg:mb-0">
               <div className="">
-                <p className="mb-5 text-center lg:text-left font-bold text-2xl max-w-[360px]">
+                <p className="mb-5 mx-auto lg:mx-0 text-center lg:text-left font-bold text-2xl max-w-[360px]">
                   Your source for prostate cancer information and support
                 </p>
 
-                <ul className="flex list-disc list-inside  mb-5 font-bold">
+                <ul className="flex list-disc list-inside justify-center lg:justify-start  mb-5 font-bold">
                   <li className=" mr-10">Support</li>
                   <li className=" mr-10">Awareness</li>
                   <li className="">Research</li>
@@ -95,13 +95,24 @@ const SiteFooter = ({
 
             <div className="basis-full"></div>
           </div>
+
+          <div className="flex items-center justify-center pt-10 lg:mb-0 lg:hidden">
+            {socialMedia.map(({ img, url }, i) => (
+              <div key={i} className="mr-3 last:mr-0">
+                <a href={url} target="_blank">
+                  <img src={`/assets/img/icons/${img}`} alt={img} />
+                </a>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
       <section className="bg-blue text-white py-5 px-[22px]">
         <div className="container">
           <p className="text-center">
-            &copy; {new Date().getFullYear()} Prostate Cancer Foundation BC.
+            &copy; {new Date().getFullYear()} Prostate Cancer Foundation BC.{" "}
+            <br className="block lg:hidden" />
             Charity #87105-7840 RR0001
           </p>
         </div>

@@ -9,8 +9,9 @@ const Donate = () => {
     contact,
     address3: { street, city, province, postalCode, country },
     name,
-  } = useOutletContext();
+  } = useOutletContext().company;
   // console.log(data)
+
   return (
     <div>
       <PageTitle
@@ -21,22 +22,22 @@ const Donate = () => {
       <section>
         <div className="container">
           <h2 className="text-center text-5xl">
-            <span className="text-blue">Ways to</span> Support us
+            <span className="text-blue">Ways to</span> <br className="block md:hidden" /> Support us
           </h2>
           <div className="mb-10"></div>
 
           <div className="border-b-2 border-blue pb-10 mb-10">
             <Row>
               <Col w={6}>
-                <Link to="/ways-to-give/donate-online" className="w-full">
-                  <h2 className="w-full max-w-[500px] bg-blue p-10">
+                <Link to="/ways-to-give/donate-online" className="w-full mb-10 md:mb-0">
+                  <h2 className="w-full max-w-[500px] bg-blue p-10 ">
                     <span className="text-darkBlue">DONATE</span>
                     <br /> <span className="text-white text-5xl">Online</span>
                   </h2>
                 </Link>
               </Col>
-              <Col w={6}>
-                <div>
+              <Col w={6} className="flex !justify-start md:!justify-center">
+                <div className="w-[225px] px-10 md:px-0">
                   <p>Fill out our online form:</p>
                   <PrimaryBtn
                     className="btn-main"
@@ -51,16 +52,16 @@ const Donate = () => {
 
           <div>
             <Row>
-              <Col w={6}>
-                <Link to="/ways-to-give/donate-online" className="w-full">
+              <Col w={6} className="mb-10 md:mb-0">
+                <div className="w-full">
                   <h2 className="w-full max-w-[500px] bg-blue p-10">
                     <span className="text-darkBlue">DONATE</span>
                     <br /> <span className="text-white text-5xl">BY MAIL</span>
                   </h2>
-                </Link>
+                </div>
               </Col>
-              <Col w={6}>
-                <div>
+              <Col w={6}  className="flex !justify-start md:!justify-center">
+                <div className="px-10 md:px-0">
                   <p>Please mail your cheque to:</p>
                   <p>
                     <span className="font-bold">{name}</span>

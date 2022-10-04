@@ -31,10 +31,10 @@ const CommunityCard = (props) => {
           <ul>
             {committeeMembers?.map(({ title, name }) => (
               <li className="flex items-end">
-                <h4 className="text-white">{name}</h4>
+                <h4 className="text-white text-base md:text-lg">{name}</h4>
 
                 {title ? (
-                  <i className="text-white text-sm">
+                  <i className="text-white text-sm md:text-base">
                     {", "}
                     {title}
                   </i>

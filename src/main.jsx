@@ -60,6 +60,10 @@ import WaysToGive from "./pages/WaysToGive";
 import Donate from "./pages/WaysToGive/Donate";
 import AlternativeWaysToSupportUs from "./pages/WaysToGive/AlternativeWaysToSupportUs";
 import DonateOnline from "./pages/WaysToGive/DonateOnline";
+import ThankYou from "./pages/WaysToGive/ThankYou";
+import TaxReceipt from "./pages/WaysToGive/TaxReceipt";
+import PaymentError from "./pages/WaysToGive/PaymentError";
+import SubmitionError from "./pages/WaysToGive/SubmissionError";
 
 import "./index.css";
 import "tw-elements";
@@ -200,6 +204,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             />
             <Route path="donate" element={<Donate />} />
             <Route path="donate-online" element={<DonateOnline />} />
+            <Route path="thank-you" element={<ThankYou />} />
+            <Route path="tax-receipt" element={<TaxReceipt />} />
+            <Route path="payment-error" element={<PaymentError />} />
+            <Route path="submission-error" element={<SubmitionError />} />
           </Route>
 
           <Route path="*" element={<Page404 />} />

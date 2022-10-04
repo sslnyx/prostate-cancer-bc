@@ -17,7 +17,7 @@ const PeerSupport = () => {
         we can set that up.</p><p>Our peer support program pairs patients or their partners with volunteers from our prostate cancer community for a ‘One on One’ chat.</p>"
       />
 
-      <section>
+      <section className="py-5 md:py-14">
         <div className="container flex justify-center">
           <div className="max-w-[750px]">
             <p>

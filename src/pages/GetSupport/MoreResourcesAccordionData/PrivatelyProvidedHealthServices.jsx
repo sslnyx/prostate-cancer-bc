@@ -1,9 +1,10 @@
 import AccordionCard from "../../../components/AccordionCard";
 import PrimaryBtn from "../../../components/bttons/PrimaryBtn";
+import YoutubeIframe from "../../../components/post-section/YoutubeIframe";
 
 const PrivatelyProvidedHealthServices = () => {
   return (
-    <div>
+    <div className="md:px-10">
       <AccordionCard title="Initio">
         <p>
           Initio Medical is the only clinic in Western Canada that offers the
@@ -41,19 +42,9 @@ const PrivatelyProvidedHealthServices = () => {
           </a>
         </p>
 
-        <div className="flex justify-center outer-video my-5">
-          <iframe
-            className="w-full h-full inner"
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/XVSychHqXuY"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-
+        <YoutubeIframe videoId="XVSychHqXuY" />
+        <div className="mb-5"></div>
+        
         <div>
           <PrimaryBtn
             href="https://www.youtube.com/watch?v=XVSychHqXuY"

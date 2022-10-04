@@ -2,6 +2,8 @@ import PageTitle from "../../components/PageTitle";
 import QuoteBox from "../../components/QuoteBox";
 import Accordion from "../../components/Accordion";
 import { useOutletContext } from "react-router-dom";
+import AccordionTitle from "../../components/AccordionTitle";
+import AccordionContent from "../../components/AccordionContent";
 
 const SupportGroups = () => {
   const {
@@ -21,6 +23,7 @@ const SupportGroups = () => {
             You can find a calendar of most support group meetings in Canada on
             our national support website—
             <a
+              target="_blank"
               href="https://prostatecancersupport.ca/"
               className="text-blue underline"
             >
@@ -32,6 +35,7 @@ const SupportGroups = () => {
             You can also find and contact a support group anywhere in Canada
             through our{" "}
             <a
+              target="_blank"
               href="https://prostatecancersupport.ca/support-groups/"
               className="text-blue underline"
             >
@@ -58,11 +62,10 @@ const SupportGroups = () => {
       </section>
 
       <section>
-        <div className="container">
-          <Accordion data={accordion} type="white" id="support-group-accordion" />
+        <div className="container link-blue">
+          <Accordion data={accordion} type="white" />
         </div>
       </section>
-
     </div>
   );
 };

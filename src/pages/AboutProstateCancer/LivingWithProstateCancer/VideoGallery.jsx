@@ -93,28 +93,15 @@ const VideoGallery = ({ data }) => {
     <div className="-mx-6 md:mx-0">
       <div ref={sliderRef} className="keen-slider bg-darkBlue">
         {data.map(({ id, title }) => (
-          <div className="keen-slider__slide number-slide1 relative ">
+          <div key={id} className="keen-slider__slide number-slide1 relative ">
             <YoutubeIframe videoId={id} />
-            {/* <YTframe videoId={id} /> */}
-
-            {/* <div onClick={() => videoHandler(id)}>
-              <img
-                src="/assets/img/icons/play-btn.svg"
-                className="absolute z-10 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
-              />
-              <img
-                className="w-full h-full inner object-cover"
-                src={`https://i.ytimg.com/vi/${id}/sddefault.jpg`}
-                alt=""
-              />
-            </div> */}
           </div>
         ))}
       </div>
 
       <div ref={thumbnailRef} className="keen-slider thumbnail">
         {data.map(({ id, title }) => (
-          <div className="keen-slider__slide number-slide1 relative !h-auto">
+          <div key={id} className="keen-slider__slide number-slide1 relative !h-auto">
             <div className="v-filter w-full h-full absolute left-0 top-0 bg-darkBlue bg-opacity-80"></div>
 
             <img

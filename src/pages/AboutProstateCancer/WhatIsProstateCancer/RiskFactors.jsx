@@ -2,6 +2,7 @@ import ImageAndText from "../../../components/post-section/ImageAndText";
 import PostTitle from "../../../components/post-section/PostTitle";
 import Row from "../../../components/rows-cols/Row";
 import Col from "../../../components/rows-cols/Col";
+import PageTitle from "../../../components/PageTitle";
 
 const RiskFactors = () => {
   const factors = [
@@ -27,46 +28,51 @@ const RiskFactors = () => {
     },
   ];
   return (
-    <div>
-      <PostTitle>
+    <>
+      <PageTitle p1="Risk" p2="Factors" className="title-light" />
+      <div className="container">
+        {/* <PostTitle>
         Risk <span className="text-blue">Factors</span>
-      </PostTitle>
+      </PostTitle> */}
 
-      <ImageAndText
-        imgSrc="/assets/img/about-prostate-cancer/risk-factors/risk-1.jpeg"
-        order="reverse"
-        c1={6}
-        c2={6}
-      >
-        <div>
-          <p>
-            The risk factors for developing prostate cancer are not fully
-            understood and require more research. However, the following are
-            risk factors that have been well-studied and are most likely to
-            increase your chances of developing prostate cancer. The more risk
-            factors you have, the greater the likelihood that you will develop
-            prostate cancer.
-          </p>
-        </div>
-      </ImageAndText>
+        <ImageAndText
+          imgSrc="/assets/img/about-prostate-cancer/risk-factors/risk-1.jpeg"
+          order="reverse"
+          c1={6}
+          c2={6}
+        >
+          <div>
+            <p>
+              The risk factors for developing prostate cancer are not fully
+              understood and require more research. However, the following are
+              risk factors that have been well-studied and are most likely to
+              increase your chances of developing prostate cancer. The more risk
+              factors you have, the greater the likelihood that you will develop
+              prostate cancer.
+            </p>
+          </div>
+        </ImageAndText>
 
-      {factors.map(({ title, content }) => (
-        <section>
-          <Row>
-            <Col w={6}>
-              <div className="flex w-full mb-5 md:mb-0">
-                <h2 className="text-white bg-blue p-10 w-full max-w-[400px]">{title}</h2>
-              </div>
-            </Col>
-            <Col w={6}>
-              <div className="flex justify-start w-full">
-                <p className="">{content}</p>
-              </div>
-            </Col>
-          </Row>
-        </section>
-      ))}
-    </div>
+        {factors.map(({ title, content }, i) => (
+          <section key={i}>
+            <Row>
+              <Col w={6}>
+                <div className="flex w-full mb-5 md:mb-0">
+                  <h2 className="text-white bg-blue p-10 w-full max-w-[400px]">
+                    {title}
+                  </h2>
+                </div>
+              </Col>
+              <Col w={6}>
+                <div className="flex justify-start w-full">
+                  <p className="">{content}</p>
+                </div>
+              </Col>
+            </Row>
+          </section>
+        ))}
+      </div>
+    </>
   );
 };
 
